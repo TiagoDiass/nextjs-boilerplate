@@ -1,9 +1,9 @@
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import Main from './Main';
-import { Meta, Story } from '@storybook/react/types-6-0';
 
 export default {
   title: 'Main',
   component: Main
-} as Meta;
+} as ComponentMeta<typeof Main>;
 
-export const Basic: Story = (args) => <Main {...args} />;
+export const Basic: ComponentStory<typeof Main> = (args) => <Main {...args} />;

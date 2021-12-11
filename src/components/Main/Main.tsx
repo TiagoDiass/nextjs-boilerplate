@@ -1,7 +1,7 @@
 import * as S from './Main.styles';
 
 /**
- * @component Component that will have the content of the boilerplate
+ * Component that will have the content of the boilerplate
  */
 export default function Main({ title = 'Next.js Boilerplate' }) {
   return (
