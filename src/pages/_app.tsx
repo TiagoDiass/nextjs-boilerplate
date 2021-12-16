@@ -1,6 +1,8 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from 'styles';
+import theme from 'styles/theme';
 
 /**
  * @component Next.js root component
@@ -20,9 +22,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Next.js Boilerplate</title>
       </Head>
 
-      <GlobalStyles />
-
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

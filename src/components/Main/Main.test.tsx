@@ -1,9 +1,10 @@
 import Main from './Main';
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
+import { renderWithTheme } from 'utils/test-utils';
 
 describe('Component: Main', () => {
   it('should render correctly', () => {
-    const { container } = render(<Main />);
+    const { container } = renderWithTheme(<Main />);
 
     expect(screen.getByRole('heading', { name: 'Next.js Boilerplate' })).toBeInTheDocument();
 
