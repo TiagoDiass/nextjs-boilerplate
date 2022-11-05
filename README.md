@@ -27,11 +27,11 @@
 To use this boilerplate, you can create a github repository using this as a template, or you can run the following command on your terminal (assuming you have [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/))
 ```
 # Create the project with yarn
-$ yarn create next-app --example https://github.com/TiagoDiass/nextjs-boilerplate
+$ yarn create next-app --example https://github.com/TiagoDiass/nextjs-boilerplate your-app-name
 
 # OR
 # Create the project with npm
-$ npm create-next-app --example https://github.com/TiagoDiass/nextjs-boilerplate
+$ npm create-next-app --example https://github.com/TiagoDiass/nextjs-boilerplate your-app-name
 ```
 
 
